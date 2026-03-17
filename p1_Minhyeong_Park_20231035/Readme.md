@@ -1,1 +1,1 @@
-[Uploading p1_Minhyeong_Park_20231035.pdf…]()
+[PDF 보기](./p1_Minhyeong_Park_20231035.pdf)
