@@ -194,43 +194,43 @@ const dragState = {
 
 const memories = [
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory01.jpg',
+    image: 'public/assets/memory01.jpg',
     text: 'My first solo trip to Grindelwald, Switzerland.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory02.jpg',
+    image: 'public/assets/memory02.jpg',
     text: 'Cup noodles I used to eat with my high school roommate when we were not supposed to.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory03.jpg',
+    image: 'public/assets/memory03.jpg',
     text: 'That time I got a surgery and I was alone in the hospital room for days.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory04.jpg',
+    image: 'public/assets/memory04.jpg',
     text: 'My puppy when she was a baby.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory05.jpg',
+    image: 'public/assets/memory05.jpg',
     text: 'Hot chocolate in Iceland while waiting for the Northern Lights to show up but they never came...'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory06.jpg',
+    image: 'public/assets/memory06.jpg',
     text: 'Me and my friend on a summer day at the beach in Nice, France.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory07.jpg',
+    image: 'public/assets/memory07.jpg',
     text: 'School festival day in Sogang. We had fried chicken watching the performance.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory08.jpg',
+    image: 'public/assets/memory08.jpg',
     text: 'My friend made a sandwhich for us in the morning after a night out.'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory09.jpg',
+    image: 'public/assets/memory09.jpg',
     text: 'I was invited to a dinner by my friend, and he cooked a salmon steak with his girlfriend. They can sell it at a restaurant!!'
   },
   {
-    image: '/26SpringCG/CandyJar/public/assets/memory10.jpg',
+    image: 'public/assets/memory10.jpg',
     text: 'My favorite crepe place in Tokyo. Me and my friend went there to charge energy after a long day of walking around the city.'
   }
 ];
@@ -240,7 +240,7 @@ const memories = [
 const objLoader = new OBJLoader();
 
 objLoader.load(
-  '/26SpringCG/CandyJar/public/glassJar.obj',
+  'public/glassJar.obj',
 
   (jar) => {
 
