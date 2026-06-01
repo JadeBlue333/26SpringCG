@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Mona12';
+  src: url('/assets/Mona12.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  background: #080a12;
+  font-family: 'Mona12', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top, rgba(97, 120, 255, 0.18), transparent 28%),
+    radial-gradient(circle at bottom, rgba(255, 137, 199, 0.18), transparent 30%),
+    #080a12;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.intro-copy {
+  position: fixed;
+  right: 18px;
+  top: 18px;
+  z-index: 20;
+  width: min(480px, calc(100vw - 36px));
+  color: rgba(255, 255, 255, 0.9);
+  text-align: right;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+}
+
+.intro-copy h1 {
+  margin: 0 0 8px;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.intro-copy p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.memory-form {
+  position: fixed;
+  left: 18px;
+  top: 18px;
+  z-index: 20;
+  display: grid;
+  width: min(250px, calc(100vw - 36px));
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(8, 10, 18, 0.72);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.memory-field {
+  display: grid;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+}
+
+.memory-field input,
+.memory-field textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  outline: none;
+}
+
+.memory-field input {
+  padding: 6px;
+}
+
+.memory-field textarea {
+  min-height: 54px;
+  padding: 7px;
+  resize: vertical;
+}
+
+.memory-field input:focus,
+.memory-field textarea:focus {
+  border-color: rgba(255, 255, 255, 0.56);
+}
+
+.memory-form button {
+  min-height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff2a8;
+  color: #1d1a10;
+}
+
+.memory-form button:hover {
+  background: #ffe978;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CandyJar Three.js Art</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <section class="intro-copy" aria-label="Memory Candy Jar">
+      <h1>Memory Candy Jar</h1>
+      <p>Take your memory candy out of the jar and taste it.<br />
+        Sweet memories might slip out of your jar.<br />
+        But you can fill it with better candies...</p>
+    </section>
+    <form class="memory-form" id="memoryForm">
+      <label class="memory-field">
+        <span>Image</span>
+        <input id="memoryImageInput" type="file" accept="image/*" required />
+      </label>
+      <label class="memory-field">
+        <span>Text</span>
+        <textarea id="memoryTextInput" rows="3" placeholder="Write a memory..." required></textarea>
+      </label>
+      <button type="submit">Fill your jar</button>
+    </form>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
